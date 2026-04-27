@@ -1,1 +1,5 @@
+<h1>Dashboard</h1>
 
+{% for run in runs %}
+  <p>Passed: {{ run.passed }} | Failed: {{ run.failed }}</p>
+{% endfor %}
