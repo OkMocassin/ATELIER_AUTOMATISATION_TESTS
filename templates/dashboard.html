@@ -1,5 +1,9 @@
-<h1>Dashboard</h1>
+<h1>📊 API Monitoring Dashboard</h1>
 
 {% for run in runs %}
-  <p>Passed: {{ run.passed }} | Failed: {{ run.failed }}</p>
+  <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+    <p><b>Passed:</b> {{ run.passed }}</p>
+    <p><b>Failed:</b> {{ run.failed }}</p>
+    <p><b>Latency avg:</b> {{ run.latency_avg }}</p>
+  </div>
 {% endfor %}
