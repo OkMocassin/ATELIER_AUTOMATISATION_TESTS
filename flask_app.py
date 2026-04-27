@@ -15,6 +15,14 @@ def run():
     save_run(data)
     return jsonify(data)
 
+@app.route("/health")
+def health():
+    return {
+        "status": "OK",
+        "service": "API Monitoring",
+        "uptime": "running"
+    }
+
 @app.route("/dashboard")
 def dashboard():
     runs = list_runs()
