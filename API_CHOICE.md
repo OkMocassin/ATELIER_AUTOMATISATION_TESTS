@@ -1,13 +1,14 @@
 # API Choice
 
-- Étudiant :
-- API choisie :
-- URL base :
-- Documentation officielle / README :
-- Auth : None / API Key / OAuth
+- Étudiant : Léo-Paul GANDON
+- API choisie : Agify
+- URL base : https://api.agify.io
+- Auth : None
 - Endpoints testés :
-  - GET ...
-  - GET ...
-- Hypothèses de contrat (champs attendus, types, codes) :
-- Limites / rate limiting connu :
-- Risques (instabilité, downtime, CORS, etc.) :
+  - GET /?name=michael
+- Hypothèses :
+  - name: string
+  - age: int
+  - count: int
+- Risques :
+  - API lente ou indisponible
